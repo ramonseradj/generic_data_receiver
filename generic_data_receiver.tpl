@@ -92,7 +92,7 @@ if (requestPath === data.path) {
             eventContainer.push(event);
         }
         eventContainer.forEach((events) => {
-            events.event_name = "eventbus";
+            events.event_name = "generic_event";
             runContainer(events, () => logToConsole(events));
         });
         sendResponse("Data Ingestion was successfull", header_success, 200);
